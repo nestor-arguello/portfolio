@@ -1,0 +1,199 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none; }
+
+@keyframes glow {
+  0% {
+    text-shadow: 0px 0px 0px transparent; }
+  50% {
+    text-shadow: 0px 2px 10px #fff; }
+  100% {
+    text-shadow: 0px 0px 0px transparent; } }
+
+@keyframes flip {
+  0% {
+    transform: rotateY(0deg); }
+  50% {
+    transform: rotateY(180deg); }
+  100% {
+    transform: rotateY(0deg); } }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fff; }
+
+.l-col {
+  display: flex;
+  flex-flow: column; }
+
+.l-row {
+  display: flex;
+  flex-flow: row; }
+
+.l-expand {
+  flex: 1; }
+
+.l-center-h {
+  margin: 0 auto; }
+
+.l-center-both {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.l-center-text {
+  text-align: center; }
+
+.main-wrapper {
+  padding: 1rem;
+  height: 100vh;
+  min-width: 32rem;
+  display: flex;
+  background-color: #fff;
+  margin: 0 auto; }
+
+.instructions {
+  width: 15%;
+  margin-right: 1rem; }
+  .instructions__title {
+    text-transform: uppercase;
+    color: #00558c;
+    font-family: 'Roboto', sans-serif; }
+  .instructions__subtitle p {
+    color: #00558c;
+    font-weight: 600;
+    font-size: 1.1rem; }
+  .instructions__arrow img {
+    width: 100%;
+    height: auto;
+    backface-visibility: hidden; }
+
+.cards-container {
+  width: 85%; }
+
+.card {
+  position: relative;
+  min-height: 12rem;
+  margin: 0 0.4rem;
+  border-radius: 13px;
+  transition: all 0.2s linear;
+  cursor: pointer; }
+  .card:hover {
+    transform: scale(1.13); }
+    .card:hover .card__content {
+      visibility: visible;
+      opacity: 1;
+      max-height: 16rem; }
+    .card:hover .card__title span {
+      display: block;
+      animation: glow 0.9s 0.1s ease-out forwards; }
+    .card:hover .card__icon img {
+      animation: flip 0.6s ease-out forwards; }
+  .card:last-child {
+    margin-right: 0.2rem; }
+  .card:nth-child(odd) {
+    background-color: #00558c; }
+  .card:nth-child(even) {
+    background-color: #a3c318; }
+  .card__globe {
+    width: 60%;
+    padding-bottom: 60%;
+    border-radius: 50%;
+    margin: 0 50%;
+    transform: translate(-50%, -50%);
+    background-color: inherit;
+    backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; }
+  .card__step {
+    position: absolute;
+    margin: -25% 50%;
+    transform: translate(-50%);
+    color: #fff;
+    font-size: 3.4rem;
+    font-family: 'Roboto';
+    font-weight: 600; }
+  .card__separator {
+    width: 80%;
+    border-top: dashed 1px white;
+    margin: 0 auto;
+    margin-top: -42%;
+    z-index: 10; }
+  .card__icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; }
+    .card__icon-holder {
+      position: absolute;
+      width: 50%;
+      height: 50%;
+      background-color: #fff;
+      border-radius: 50%;
+      padding-bottom: 0; }
+      .card__icon-holder img {
+        width: 100%;
+        padding: 16%; }
+        .card__icon-holder img.listen {
+          padding: 14%; }
+        .card__icon-holder img.exchange {
+          padding: 18%;
+          margin-top: -2%; }
+        .card__icon-holder img.clipboard {
+          margin-left: 5%;
+          margin-top: -4%; }
+        .card__icon-holder img.coding {
+          padding: 18%;
+          margin-left: 2%; }
+        .card__icon-holder img.analysis {
+          padding: 18%; }
+  .card__title {
+    margin: -4rem 0;
+    text-align: center; }
+    .card__title span {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 1.1rem;
+      font-weight: 700; }
+  .card__content {
+    margin-bottom: 1rem;
+    margin-top: 4rem;
+    padding: 0 0.7rem;
+    visibility: hidden;
+    opacity: 0;
+    max-height: 0;
+    transition: all 0.2s linear; }
+    .card__content p {
+      text-align: center;
+      color: white;
+      font-size: 1.1rem;
+      flex: 0; }
+
+@media only screen and (max-width: 576px) {
+  html {
+    font-size: 50%; } }
+
+@media only screen and (min-width: 576px) {
+  html {
+    font-size: 46%; }
+    html .card__content p {
+      font-weight: 600; } }
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 62.5%; }
+    html .card__content p {
+      font-weight: 400; } }
+
+@media only screen and (min-width: 992px) {
+  html {
+    font-size: 82.5%; } }
