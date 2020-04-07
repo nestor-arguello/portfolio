@@ -62,12 +62,14 @@ html {
 
 .interactive {
   padding: 0 2rem;
-  background-color: #F7F7F7;
-  position: relative;
-  height: 100vh;
-  min-width: 32rem;
-  display: grid;
-  grid-auto-rows: max-content; }
+    background-color: #F7F7F7;
+    position: relative;
+    height: 100vh;
+    min-width: 32rem;
+    max-width: 110rem;
+    display: grid;
+    grid-auto-rows: max-content;
+    margin: 0 auto; }
   .interactive--bottom {
     position: relative; }
     .interactive--bottom::after {
