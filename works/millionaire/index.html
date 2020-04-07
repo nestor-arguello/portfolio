@@ -1,379 +1,405 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Interactive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Interactive</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700|Roboto:300,400,500,700"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="./css/fontawesome-all.min.css"> -->
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700|Roboto:300,400,500,700" rel="stylesheet">
-  <!-- <link rel="stylesheet" type="text/css" media="screen" href="./css/fontawesome-all.min.css"> -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./css/styles.css"
+    />
+    <style>
+      .back-home-btn {
+        position: absolute;
+        background-color: #4986e7;
+        border-radius: 4px;
+      }
+      .back-home-btn:hover {
+        opacity: 0.7;
+      }
+      .back-home-btn a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 32px;
+        font-weight: 400;
+        padding: 0 12px;
+      }
+    </style>
+  </head>
 
-  <link rel="stylesheet" type="text/css" media="screen" href="./css/styles.css" />
-</head>
-
-<body>
-  <div class="l-main-wrapper">
-    <div class="hud">
-
-      <div class="hud__control ">
-        <div class="control-btn control-btn--left l-round-frame is-disabled"></div>
+  <body>
+    <div class="l-main-wrapper">
+      <div class="back-home-btn">
+        <a
+          href="https://nestor-arguello.github.io/portfolio"
+          target="_self"
+          title="Back Home"
+          >&#8617;</a
+        >
       </div>
+      <div class="hud">
+        <div class="hud__control">
+          <div
+            class="control-btn control-btn--left l-round-frame is-disabled"
+          ></div>
+        </div>
 
-      <div class="reaction l-center-both">
-        <div class="reaction__holder">
+        <div class="reaction l-center-both">
+          <div class="reaction__holder">
+            <div
+              class="reaction__icon-container reaction__icon-container--1 is-active"
+            >
+              <div
+                class="reaction__icon reaction__icon--thematic is-active"
+              ></div>
 
-          <div class="reaction__icon-container reaction__icon-container--1 is-active">
-            <div class="reaction__icon reaction__icon--thematic is-active"></div>
+              <div class="reaction__icon reaction__icon--correct"></div>
 
-            <div class="reaction__icon reaction__icon--correct"></div>
+              <div class="reaction__icon reaction__icon--wrong"></div>
+            </div>
+            <!-- /.reaction__icon-container.reaction__icon-container--1 -->
 
-            <div class="reaction__icon reaction__icon--wrong"></div>
-          </div>
-          <!-- /.reaction__icon-container.reaction__icon-container--1 -->
+            <div class="reaction__icon-container reaction__icon-container--2">
+              <div
+                class="reaction__icon reaction__icon--thematic is-active"
+              ></div>
 
-          <div class="reaction__icon-container reaction__icon-container--2">
-            <div class="reaction__icon reaction__icon--thematic is-active"></div>
+              <div class="reaction__icon reaction__icon--correct"></div>
 
-            <div class="reaction__icon reaction__icon--correct"></div>
+              <div class="reaction__icon reaction__icon--wrong"></div>
+            </div>
+            <!-- /.reaction__icon-container.reaction__icon-container--2 -->
 
-            <div class="reaction__icon reaction__icon--wrong"></div>
-          </div>
-          <!-- /.reaction__icon-container.reaction__icon-container--2 -->
-          
-          <div class="reaction__icon-container reaction__icon-container--3">
-            <div class="reaction__icon reaction__icon--thematic is-active"></div>
+            <div class="reaction__icon-container reaction__icon-container--3">
+              <div
+                class="reaction__icon reaction__icon--thematic is-active"
+              ></div>
 
-            <div class="reaction__icon reaction__icon--correct"></div>
+              <div class="reaction__icon reaction__icon--correct"></div>
 
-            <div class="reaction__icon reaction__icon--wrong"></div>
-          </div>
-          <!-- /.reaction__icon-container.reaction__icon-container--3 -->
+              <div class="reaction__icon reaction__icon--wrong"></div>
+            </div>
+            <!-- /.reaction__icon-container.reaction__icon-container--3 -->
 
-          <div class="hud__counter">
-            <div class="round-border-box l-center-both">
-              <div class="hud__counter-digits">
-                <span class="digit digit--left">2</span>
-                <span class="digit digit--separator">/</span>
-                <span class="digit digit--right">3</span>
+            <div class="hud__counter">
+              <div class="round-border-box l-center-both">
+                <div class="hud__counter-digits">
+                  <span class="digit digit--left">2</span>
+                  <span class="digit digit--separator">/</span>
+                  <span class="digit digit--right">3</span>
+                </div>
               </div>
             </div>
+            <!-- /.hud-counter -->
           </div>
-          <!-- /.hud-counter -->
+        </div>
+        <!-- /.reaction -->
+
+        <div class="hud__control">
+          <div class="control-btn control-btn--right l-round-frame"></div>
         </div>
       </div>
-      <!-- /.reaction -->
+      <!-- /.hud -->
 
+      <div class="quiz">
+        <div class="quiz__container quiz__container--1 is-active">
+          <div class="quiz__top l-center-both">
+            <div class="quiz__question l-center-both">
+              <p class="text-question">
+                Lorem ipsum ## 1 ##
+              </p>
+            </div>
+          </div>
+          <!-- /.quiz__top -->
 
+          <div class="quiz__bottom">
+            <div class="quiz__answer-outer l-row">
+              <div class="l-col l-horizontal-margin l-expand">
+                <button
+                  type="button"
+                  class="quiz__answer quiz__answer--1 l-center-both l-vertical-margin"
+                >
+                  <div class="question-text l-center-both">
+                    <p class="question-text__content">
+                      <i class="diamond">&diams;</i>
+                      <span class="question-text__letter">A: </span>
+                      <span class="j-answer-target j-answer-target--1">
+                        Lorem ipsum dolor,
+                      </span>
+                    </p>
+                  </div>
+                </button>
+                <!-- /.quiz__answer -->
 
-      <div class="hud__control ">
-        <div class="control-btn control-btn--right l-round-frame"></div>
+                <button
+                  type="button"
+                  class="quiz__answer quiz__answer--1 l-center-both l-vertical-margin is-true"
+                >
+                  <div class="question-text l-center-both">
+                    <p class="question-text__content">
+                      <i class="diamond">&diams;</i>
+                      <span class="question-text__letter">C: </span>
+                      <span class="j-answer-target j-answer-target--2">
+                        Lorem ipsum dolor,
+                      </span>
+                    </p>
+                  </div>
+                </button>
+                <!-- /.quiz__answer -->
+              </div>
+              <!-- /.l-col -->
+
+              <div class="l-col l-horizontal-margin l-expand">
+                <button
+                  type="button"
+                  class="quiz__answer quiz__answer--1 l-center-both l-vertical-margin"
+                >
+                  <div class="question-text l-center-both">
+                    <p class="question-text__content">
+                      <i class="diamond">&diams;</i>
+                      <span class="question-text__letter">B: </span>
+                      <span class="j-answer-target j-answer-target--3">
+                        Lorem ipsum dolor,
+                      </span>
+                    </p>
+                  </div>
+                </button>
+                <!-- /.quiz__answer -->
+
+                <button
+                  type="button"
+                  class="quiz__answer quiz__answer--1 l-center-both l-vertical-margin"
+                >
+                  <div class="question-text l-center-both">
+                    <p class="question-text__content">
+                      <i class="diamond">&diams;</i>
+                      <span class="question-text__letter">D: </span>
+                      <span class="j-answer-target j-answer-target--4">
+                        Lorem ipsum dolor,
+                      </span>
+                    </p>
+                  </div>
+                </button>
+                <!-- /.quiz__answer -->
+              </div>
+              <!-- /.l-col -->
+            </div>
+            <!-- /.quiz__answer-outer -->
+          </div>
+          <!-- /.quiz__bottom -->
+        </div>
+        <!-- /.quiz__container.quiz__container--1 -->
+
+        <div class="quiz__container quiz__container--2">
+          <div class="quiz__top l-center-both">
+            <div class="quiz__question l-center-both">
+              <p class="text-question">
+                Lorem ipsum ## 2 ##, sit amet consectetur adipisicing elit.
+                Cupiditate 12 Cupiditate nostrum sapiente fugit ullam labore
+                omnis exercitationem deleniti nemo! Cupiditate nostrum sapiente
+                fugit ullam labore omnis exercitationem deleniti nemo!
+              </p>
+            </div>
+          </div>
+          <!-- /.quiz__top -->
+
+          <div class="quiz__bottom">
+            <div class="quiz__answer-outer l-row">
+              <div class="l-col l-horizontal-margin l-expand">
+                <button
+                  type="button"
+                  class="quiz__answer quiz__answer--2 l-center-both l-vertical-margin"
+                >
+                  <div class="question-text l-center-both">
+                    <p class="question-text__content">
+                      <i class="diamond">&diams;</i>
+                      <span class="question-text__letter">A: </span>
+                      <span class="j-answer-target j-answer-target--1">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Cupiditate nostrum sapiente fugit ullam.
+                        Cupiditate
+                      </span>
+                    </p>
+                  </div>
+                </button>
+                <!-- /.quiz__answer -->
+
+                <button
+                  type="button"
+                  class="quiz__answer quiz__answer--2 l-center-both l-vertical-margin is-true"
+                >
+                  <div class="question-text l-center-both">
+                    <p class="question-text__content">
+                      <i class="diamond">&diams;</i>
+                      <span class="question-text__letter">C: </span>
+                      <span class="j-answer-target j-answer-target--2">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit.
+                      </span>
+                    </p>
+                  </div>
+                </button>
+                <!-- /.quiz__answer -->
+              </div>
+              <!-- /.l-col -->
+
+              <div class="l-col l-horizontal-margin l-expand">
+                <button
+                  type="button"
+                  class="quiz__answer quiz__answer--2 l-center-both l-vertical-margin"
+                >
+                  <div class="question-text l-center-both">
+                    <p class="question-text__content">
+                      <i class="diamond">&diams;</i>
+                      <span class="question-text__letter">B: </span>
+                      <span class="j-answer-target j-answer-target--3">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit.
+                      </span>
+                    </p>
+                  </div>
+                </button>
+                <!-- /.quiz__answer -->
+
+                <button
+                  type="button"
+                  class="quiz__answer quiz__answer--2 l-center-both l-vertical-margin"
+                >
+                  <div class="question-text l-center-both">
+                    <p class="question-text__content">
+                      <i class="diamond">&diams;</i>
+                      <span class="question-text__letter">D: </span>
+                      <span class="j-answer-target j-answer-target--4">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Cupiditate nostrum sapiente fugit ullam.
+                        Cupiditate
+                      </span>
+                    </p>
+                  </div>
+                </button>
+                <!-- /.quiz__answer -->
+              </div>
+              <!-- /.l-col -->
+            </div>
+            <!-- /.quiz__answer-outer -->
+          </div>
+          <!-- /.quiz__bottom -->
+        </div>
+        <!-- /.quiz__container.quiz__container--2 -->
+
+        <div class="quiz__container quiz__container--3">
+          <div class="quiz__top l-center-both">
+            <div class="quiz__question l-center-both">
+              <p class="text-question">
+                Lorem ipsum ## 3 ##, sit amet consectetur adipisicing elit.
+                Cupiditate nostrum sapiente fugit ullam labore omnis
+                exercitationem deleniti nemo! Cupiditate nostrum sapiente fugit
+                ullam labore omnis exercitationem deleniti nemo!
+              </p>
+            </div>
+          </div>
+          <!-- /.quiz__top -->
+
+          <div class="quiz__bottom">
+            <div class="quiz__answer-outer l-row">
+              <div class="l-col l-horizontal-margin l-expand">
+                <button
+                  type="button"
+                  class="quiz__answer quiz__answer--3 l-center-both l-vertical-margin"
+                >
+                  <div class="question-text l-center-both">
+                    <p class="question-text__content">
+                      <i class="diamond">&diams;</i>
+                      <span class="question-text__letter">A: </span>
+                      <span class="j-answer-target j-answer-target--1">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Cupiditate nostrum sapiente fugit ullam.
+                        Cupiditate
+                      </span>
+                    </p>
+                  </div>
+                </button>
+                <!-- /.quiz__answer -->
+
+                <button
+                  type="button"
+                  class="quiz__answer quiz__answer--3 l-center-both l-vertical-margin is-true"
+                >
+                  <div class="question-text l-center-both">
+                    <p class="question-text__content">
+                      <i class="diamond">&diams;</i>
+                      <span class="question-text__letter">C: </span>
+                      <span class="j-answer-target j-answer-target--2">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit.
+                      </span>
+                    </p>
+                  </div>
+                </button>
+                <!-- /.quiz__answer -->
+              </div>
+              <!-- /.l-col -->
+
+              <div class="l-col l-horizontal-margin l-expand">
+                <button
+                  type="button"
+                  class="quiz__answer quiz__answer--3 l-center-both l-vertical-margin"
+                >
+                  <div class="question-text l-center-both">
+                    <p class="question-text__content">
+                      <i class="diamond">&diams;</i>
+                      <span class="question-text__letter">B: </span>
+                      <span class="j-answer-target j-answer-target--3">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit.
+                      </span>
+                    </p>
+                  </div>
+                </button>
+                <!-- /.quiz__answer -->
+
+                <button
+                  type="button"
+                  class="quiz__answer quiz__answer--3 l-center-both l-vertical-margin"
+                >
+                  <div class="question-text l-center-both">
+                    <p class="question-text__content">
+                      <i class="diamond">&diams;</i>
+                      <span class="question-text__letter">D: </span>
+                      <span class="j-answer-target j-answer-target--4">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Cupiditate nostrum sapiente fugit ullam.
+                        Cupiditate
+                      </span>
+                    </p>
+                  </div>
+                </button>
+                <!-- /.quiz__answer -->
+              </div>
+              <!-- /.l-col -->
+            </div>
+            <!-- /.quiz__answer-outer -->
+          </div>
+          <!-- /.quiz__bottom -->
+        </div>
+        <!-- /.quiz__container.quiz__container--3 -->
       </div>
-
+      <!-- /.quiz -->
     </div>
-    <!-- /.hud -->
-
-    <div class="quiz">
-
-      <div class="quiz__container quiz__container--1 is-active">
-        <div class="quiz__top l-center-both">
-
-          <div class="quiz__question l-center-both">
-            <p class="text-question">
-              Lorem ipsum ## 1 ##
-            </p>
-          </div>
-        </div>
-        <!-- /.quiz__top -->
-
-        <div class="quiz__bottom">
-          <div class="quiz__answer-outer l-row">
-
-            <div class="l-col l-horizontal-margin l-expand">
-
-              <button type="button" class="quiz__answer quiz__answer--1 l-center-both l-vertical-margin">
-                <div class="question-text l-center-both">
-
-                  <p class="question-text__content">
-                    <i class="diamond">&diams;</i>
-                    <span class="question-text__letter">A: </span>
-                    <span class="j-answer-target j-answer-target--1">
-                      Lorem ipsum dolor, 
-                    </span>
-
-                  </p>
-                </div>
-
-              </button>
-              <!-- /.quiz__answer -->
-
-              <button type="button" class="quiz__answer quiz__answer--1 l-center-both l-vertical-margin is-true">
-                <div class="question-text l-center-both">
-
-                  <p class="question-text__content">
-                    <i class="diamond">&diams;</i>
-                    <span class="question-text__letter">C: </span>
-                    <span class="j-answer-target j-answer-target--2">
-                      Lorem ipsum dolor, 
-                    </span>
-
-                  </p>
-                </div>
-
-              </button>
-              <!-- /.quiz__answer -->
-
-            </div>
-            <!-- /.l-col -->
-
-            <div class="l-col l-horizontal-margin l-expand">
-
-              <button type="button" class="quiz__answer quiz__answer--1 l-center-both l-vertical-margin">
-                <div class="question-text l-center-both">
-
-                  <p class="question-text__content">
-                    <i class="diamond">&diams;</i>
-                    <span class="question-text__letter">B: </span>
-                    <span class="j-answer-target j-answer-target--3">
-                      Lorem ipsum dolor, 
-                    </span>
-
-                  </p>
-                </div>
-
-              </button>
-              <!-- /.quiz__answer -->
-
-              <button type="button" class="quiz__answer quiz__answer--1 l-center-both l-vertical-margin">
-                <div class="question-text l-center-both">
-
-                  <p class="question-text__content">
-                    <i class="diamond">&diams;</i>
-                    <span class="question-text__letter">D: </span>
-                    <span class="j-answer-target j-answer-target--4">
-                      Lorem ipsum dolor, 
-                    </span>
-
-                  </p>
-                </div>
-
-              </button>
-              <!-- /.quiz__answer -->
-
-            </div>
-            <!-- /.l-col -->
-
-          </div>
-          <!-- /.quiz__answer-outer -->
-        </div>
-        <!-- /.quiz__bottom -->
-      </div>
-      <!-- /.quiz__container.quiz__container--1 -->
-
-      <div class="quiz__container quiz__container--2">
-        <div class="quiz__top l-center-both">
-
-          <div class="quiz__question l-center-both">
-            <p class="text-question">
-               Lorem ipsum ## 2 ##, sit amet consectetur adipisicing elit. Cupiditate 12 Cupiditate nostrum sapiente fugit ullam labore omnis exercitationem
-              deleniti nemo! Cupiditate nostrum sapiente fugit ullam labore omnis exercitationem deleniti nemo!
-            </p>
-          </div>
-        </div>
-        <!-- /.quiz__top -->
-
-        <div class="quiz__bottom">
-          <div class="quiz__answer-outer l-row">
-
-            <div class="l-col l-horizontal-margin l-expand">
-
-              <button type="button" class="quiz__answer quiz__answer--2 l-center-both l-vertical-margin">
-                <div class="question-text l-center-both">
-
-                  <p class="question-text__content">
-                    <i class="diamond">&diams;</i>
-                    <span class="question-text__letter">A: </span>
-                    <span class="j-answer-target j-answer-target--1">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate nostrum sapiente fugit ullam. Cupiditate
-                    </span>
-
-                  </p>
-                </div>
-
-              </button>
-              <!-- /.quiz__answer -->
-
-              <button type="button" class="quiz__answer quiz__answer--2 l-center-both l-vertical-margin is-true">
-                <div class="question-text l-center-both">
-
-                  <p class="question-text__content">
-                    <i class="diamond">&diams;</i>
-                    <span class="question-text__letter">C: </span>
-                    <span class="j-answer-target j-answer-target--2">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    </span>
-
-                  </p>
-                </div>
-
-              </button>
-              <!-- /.quiz__answer -->
-
-            </div>
-            <!-- /.l-col -->
-
-            <div class="l-col l-horizontal-margin l-expand">
-
-              <button type="button" class="quiz__answer quiz__answer--2 l-center-both l-vertical-margin">
-                <div class="question-text l-center-both">
-
-                  <p class="question-text__content">
-                    <i class="diamond">&diams;</i>
-                    <span class="question-text__letter">B: </span>
-                    <span class="j-answer-target j-answer-target--3">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    </span>
-
-                  </p>
-                </div>
-
-              </button>
-              <!-- /.quiz__answer -->
-
-              <button type="button" class="quiz__answer quiz__answer--2 l-center-both l-vertical-margin">
-                <div class="question-text l-center-both">
-
-                  <p class="question-text__content">
-                    <i class="diamond">&diams;</i>
-                    <span class="question-text__letter">D: </span>
-                    <span class="j-answer-target j-answer-target--4">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate nostrum sapiente fugit ullam. Cupiditate
-                    </span>
-
-                  </p>
-                </div>
-
-              </button>
-              <!-- /.quiz__answer -->
-
-            </div>
-            <!-- /.l-col -->
-
-          </div>
-          <!-- /.quiz__answer-outer -->
-        </div>
-        <!-- /.quiz__bottom -->
-      </div>
-      <!-- /.quiz__container.quiz__container--2 -->
-
-      <div class="quiz__container quiz__container--3">
-        <div class="quiz__top l-center-both">
-
-          <div class="quiz__question l-center-both">
-            <p class="text-question">
-              Lorem ipsum ## 3 ##, sit amet consectetur adipisicing elit. Cupiditate nostrum sapiente fugit ullam labore omnis exercitationem
-              deleniti nemo! Cupiditate nostrum sapiente fugit ullam labore omnis exercitationem deleniti nemo!
-            </p>
-          </div>
-        </div>
-        <!-- /.quiz__top -->
-
-        <div class="quiz__bottom">
-          <div class="quiz__answer-outer l-row">
-
-            <div class="l-col l-horizontal-margin l-expand">
-
-              <button type="button" class="quiz__answer quiz__answer--3 l-center-both l-vertical-margin">
-                <div class="question-text l-center-both">
-
-                  <p class="question-text__content">
-                    <i class="diamond">&diams;</i>
-                    <span class="question-text__letter">A: </span>
-                    <span class="j-answer-target j-answer-target--1">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate nostrum sapiente fugit ullam. Cupiditate
-                    </span>
-
-                  </p>
-                </div>
-
-              </button>
-              <!-- /.quiz__answer -->
-
-              <button type="button" class="quiz__answer quiz__answer--3 l-center-both l-vertical-margin is-true">
-                <div class="question-text l-center-both">
-
-                  <p class="question-text__content">
-                    <i class="diamond">&diams;</i>
-                    <span class="question-text__letter">C: </span>
-                    <span class="j-answer-target j-answer-target--2">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    </span>
-
-                  </p>
-                </div>
-
-              </button>
-              <!-- /.quiz__answer -->
-
-            </div>
-            <!-- /.l-col -->
-
-            <div class="l-col l-horizontal-margin l-expand">
-
-              <button type="button" class="quiz__answer quiz__answer--3 l-center-both l-vertical-margin">
-                <div class="question-text l-center-both">
-
-                  <p class="question-text__content">
-                    <i class="diamond">&diams;</i>
-                    <span class="question-text__letter">B: </span>
-                    <span class="j-answer-target j-answer-target--3">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    </span>
-
-                  </p>
-                </div>
-
-              </button>
-              <!-- /.quiz__answer -->
-
-              <button type="button" class="quiz__answer quiz__answer--3 l-center-both l-vertical-margin">
-                <div class="question-text l-center-both">
-
-                  <p class="question-text__content">
-                    <i class="diamond">&diams;</i>
-                    <span class="question-text__letter">D: </span>
-                    <span class="j-answer-target j-answer-target--4">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate nostrum sapiente fugit ullam. Cupiditate
-                    </span>
-
-                  </p>
-                </div>
-
-              </button>
-              <!-- /.quiz__answer -->
-
-            </div>
-            <!-- /.l-col -->
-
-          </div>
-          <!-- /.quiz__answer-outer -->
-        </div>
-        <!-- /.quiz__bottom -->
-      </div>
-      <!-- /.quiz__container.quiz__container--3 -->
-
-    </div>
-    <!-- /.quiz -->
-
-  </div>
-  <!-- /.l-main-wrapper -->
-
-
-  <script src="./js/handleSelectBox.js "></script>
-  <script src="./js/handlePager.js "></script>
-  <script src="./js/main.js "></script>
-
-</body>
-
+    <!-- /.l-main-wrapper -->
+
+    <script src="./js/handleSelectBox.js "></script>
+    <script src="./js/handlePager.js "></script>
+    <script src="./js/main.js "></script>
+  </body>
 </html>
