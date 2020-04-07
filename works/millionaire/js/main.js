@@ -1,0 +1,7 @@
+(function () {
+
+  handleSelectBox();
+
+  handlePager();
+  
+})();
