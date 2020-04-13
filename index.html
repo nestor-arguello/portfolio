@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700|Roboto:300,400,500,700"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       type="text/css"
@@ -37,15 +38,27 @@
   <body>
     <div class="main-wrapper">
       <div class="instructions l-row l-center-both">
-        <div class="instructions__text-container">
-          <div class="instructions__title l-center-text">
-            <h1>Néstor <br />Argüello</h1>
-          </div>
-          <div class="instructions__subtitle l-center-text">
-            <p>Frontend <br />Web Developer</p>
-          </div>
-          <div class="instructions__arrow">
-            <img src="./assets/arrow.svg" alt="Arrow" />
+        <div class="fixed-container">
+
+          <div class="avatar-container"><img src="./assets/image2vector2.svg" alt="avatar"></div>
+          <div class="instructions__text-container">
+            <div class="instructions__title l-center-text">
+              <h1>Néstor <br />Argüello</h1>
+            </div>
+            <div class="instructions__subtitle l-center-text">
+              <p>Frontend <br />Developer</p>
+            </div>
+            <div class="social-container">
+              <a href="mailto:nestor.arguello@gmail.com">
+                <img src="./assets/mail.svg" alt="email">
+              </a>
+              <a href="https://www.linkedin.com/in/nestorarguello/">
+                <img src="./assets/linkedin.svg" alt="linkedin">
+              </a>
+            </div>
+            <div class="instructions__arrow">
+              <img src="./assets/arrow.svg" alt="Arrow" />
+            </div>
           </div>
         </div>
         <!-- /.instructions__container -->
@@ -53,30 +66,133 @@
       <!-- /.instructions -->
 
       <div class="cards-container l-row l-center-both">
-        <div class="card card--1 l-col l-expand active">
-          <a target="_self" href="https://nestor-arguello.github.io/portfolio/works/react-login/">
+        <div class="card card--5 l-col">
+          <a target="_self" href="https://nestor-arguello.github.io/portfolio/works/react-ecommerce/">
+            <div class="card__globe"></div>
+            <div class="card__step">
+              <span>05</span>
+            </div>
 
+            <div class="card__separator"></div>
+
+            <div class="card__icon">
+              <div class="card__icon-holder">
+                <img
+                  class="telemarketer"
+                  src="./assets/laptop.svg"
+                  alt="We-train"
+                />
+              </div>
+            </div>
+
+            <div class="card__title">
+              <span>React E-Commerce</span>
+            </div>
+
+            <div class="card__content">
+              <p>
+                A simple e-commerce using React, Redux, SASS and Firebase for DB
+                & auth
+              </p>
+            </div>
+          </a>
+        </div>
+        <!-- ./card.card--5 -->
+
+        <div class="card card--5 l-col">
+          <a
+            target="_self"
+            href="https://nestor-arguello.github.io/portfolio/works/react-skypey/"
+          >
+            <div class="card__globe"></div>
+            <div class="card__step">
+              <span>05</span>
+            </div>
+
+            <div class="card__separator"></div>
+
+            <div class="card__icon">
+              <div class="card__icon-holder">
+                <img
+                  class="telemarketer"
+                  src="./assets/skype.svg"
+                  alt="We-train"
+                />
+              </div>
+            </div>
+
+            <div class="card__title">
+              <span>React Skypey</span>
+            </div>
+
+            <div class="card__content">
+              <p>
+                A simple Skype clone using React, Redux, React Hooks & Styled
+                Components
+              </p>
+            </div>
+          </a>
+        </div>
+        <!-- ./card.card--5 -->
+
+        <div class="card card--5 l-col">
+          <a
+            target="_self"
+            href="https://nestor-arguello.github.io/portfolio/works/react-vehicleslist/"
+          >
+            <div class="card__globe"></div>
+            <div class="card__step">
+              <span>05</span>
+            </div>
+
+            <div class="card__separator"></div>
+
+            <div class="card__icon">
+              <div class="card__icon-holder">
+                <img
+                  class="telemarketer"
+                  src="./assets/electric-car.svg"
+                  alt="We-train"
+                />
+              </div>
+            </div>
+
+            <div class="card__title">
+              <span>React Cars List</span>
+            </div>
+
+            <div class="card__content">
+              <p>
+                Cars listing, using React's hooks
+                and context for state, and Ant Design UI
+              </p>
+            </div>
+          </a>
+        </div>
+        <!-- ./card.card--5 -->
+
+        <div class="card card--1 l-col active">
+          <a
+            target="_self"
+            href="https://nestor-arguello.github.io/portfolio/works/react-login/"
+          >
             <div class="card__globe"></div>
             <div class="card__step">
               <span>01</span>
             </div>
-  
+
             <div class="card__separator"></div>
-  
+
             <div class="card__icon">
               <div class="card__icon-holder">
-                <img
-                  class="listen"
-                  src="./assets/login.svg"
-                  alt="Listening"
-                />
+                <img class="listen" src="./assets/login.svg" alt="Listening" />
               </div>
             </div>
-  
+
             <div class="card__title">
               <span>React Login</span>
             </div>
-  
+
             <div class="card__content">
               <p>
                 A login page using React & MaterialUI libs
@@ -86,26 +202,28 @@
         </div>
         <!-- ./card.card--1 -->
 
-        <div class="card card--2 l-col l-expand">
-          <a target="_self" href="https://nestor-arguello.github.io/portfolio/works/millionaire/">
-
+        <div class="card card--2 l-col">
+          <a
+            target="_self"
+            href="https://nestor-arguello.github.io/portfolio/works/millionaire/"
+          >
             <div class="card__globe"></div>
             <div class="card__step">
               <span>02</span>
             </div>
-  
+
             <div class="card__separator"></div>
-  
+
             <div class="card__icon">
               <div class="card__icon-holder">
                 <img class="exchange" src="./assets/rating.svg" alt="Align" />
               </div>
             </div>
-  
+
             <div class="card__title">
               <span>Who Wants To Be A Millionaire</span>
             </div>
-  
+
             <div class="card__content">
               <p>
                 A simple questions game using CSS & Javascript
@@ -115,26 +233,28 @@
         </div>
         <!-- ./card.card--2 -->
 
-        <div class="card card--3 l-col l-expand">
-          <a target="_self" href="https://nestor-arguello.github.io/portfolio/works/steps/">
-
+        <div class="card card--3 l-col">
+          <a
+            target="_self"
+            href="https://nestor-arguello.github.io/portfolio/works/steps/"
+          >
             <div class="card__globe"></div>
             <div class="card__step">
               <span>03</span>
             </div>
-  
+
             <div class="card__separator"></div>
-  
+
             <div class="card__icon">
               <div class="card__icon-holder">
                 <img class="clipboard" src="./assets/steps.svg" alt="Build" />
               </div>
             </div>
-  
+
             <div class="card__title">
               <span>Steps</span>
             </div>
-  
+
             <div class="card__content">
               <p>
                 Interactives steps, just like this menu, using CSS
@@ -144,26 +264,28 @@
         </div>
         <!-- ./card.card--3 -->
 
-        <div class="card card--4 l-col l-expand">
-          <a target="_self" href="https://nestor-arguello.github.io/portfolio/works/business-model/">
-
+        <div class="card card--4 l-col">
+          <a
+            target="_self"
+            href="https://nestor-arguello.github.io/portfolio/works/business-model/"
+          >
             <div class="card__globe"></div>
             <div class="card__step">
               <span>04</span>
             </div>
-  
+
             <div class="card__separator"></div>
-  
+
             <div class="card__icon">
               <div class="card__icon-holder">
                 <img class="coding" src="./assets/model.svg" alt="Enable" />
               </div>
             </div>
-  
+
             <div class="card__title">
               <span>Business Model</span>
             </div>
-  
+
             <div class="card__content">
               <p>
                 Interactive business model canvas using CSS & Javascript
@@ -173,16 +295,18 @@
         </div>
         <!-- ./card.card--4 -->
 
-        <div class="card card--5 l-col l-expand">
-          <a target="_self" href="https://nestor-arguello.github.io/portfolio/works/memory/">
-
+        <div class="card card--5 l-col">
+          <a
+            target="_self"
+            href="https://nestor-arguello.github.io/portfolio/works/memory/"
+          >
             <div class="card__globe"></div>
             <div class="card__step">
               <span>05</span>
             </div>
-  
+
             <div class="card__separator"></div>
-  
+
             <div class="card__icon">
               <div class="card__icon-holder">
                 <img
@@ -192,11 +316,11 @@
                 />
               </div>
             </div>
-  
+
             <div class="card__title">
               <span>Memory</span>
             </div>
-  
+
             <div class="card__content">
               <p>
                 A memory cards game using CSS & Javascript
@@ -205,8 +329,6 @@
           </a>
         </div>
         <!-- ./card.card--5 -->
-
-        
       </div>
       <!-- /.cards-container -->
     </div>
